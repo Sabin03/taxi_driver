@@ -1,0 +1,26 @@
+{
+    "sourceFile": "android/app/google-services.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1720347515851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1722863665390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,29 @@\n+{\n+  \"project_info\": {\n+    \"project_number\": \"1098297880691\",\n+    \"project_id\": \"badaa-5295d\",\n+    \"storage_bucket\": \"badaa-5295d.appspot.com\"\n+  },\n+  \"client\": [\n+    {\n+      \"client_info\": {\n+        \"mobilesdk_app_id\": \"1:1098297880691:android:9d3eae587ac641bb41fa06\",\n+        \"android_client_info\": {\n+          \"package_name\": \"com.example.taxi_driver\"\n+        }\n+      },\n+      \"oauth_client\": [],\n+      \"api_key\": [\n+        {\n+          \"current_key\": \"AIzaSyA0J4jZojt_3hS3GcKFVVOrd4_YRBoB8LE\"\n+        }\n+      ],\n+      \"services\": {\n+        \"appinvite_service\": {\n+          \"other_platform_oauth_client\": []\n+        }\n+      }\n+    }\n+  ],\n+  \"configuration_version\": \"1\"\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723408713457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,29 @@\n+{\n+  \"project_info\": {\n+    \"project_number\": \"1098297880691\",\n+    \"project_id\": \"badaa-5295d\",\n+    \"storage_bucket\": \"badaa-5295d.appspot.com\"\n+  },\n+  \"client\": [\n+    {\n+      \"client_info\": {\n+        \"mobilesdk_app_id\": \"1:1098297880691:android:9d3eae587ac641bb41fa06\",\n+        \"android_client_info\": {\n+          \"package_name\": \"com.example.taxi_driver\"\n+        }\n+      },\n+      \"oauth_client\": [],\n+      \"api_key\": [\n+        {\n+          \"current_key\": \"AIzaSyA0J4jZojt_3hS3GcKFVVOrd4_YRBoB8LE\"\n+        }\n+      ],\n+      \"services\": {\n+        \"appinvite_service\": {\n+          \"other_platform_oauth_client\": []\n+        }\n+      }\n+    }\n+  ],\n+  \"configuration_version\": \"1\"\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1720347515851,
+            "name": "Commit-0",
+            "content": "{\n  \"project_info\": {\n    \"project_number\": \"1098297880691\",\n    \"project_id\": \"badaa-5295d\",\n    \"storage_bucket\": \"badaa-5295d.appspot.com\"\n  },\n  \"client\": [\n    {\n      \"client_info\": {\n        \"mobilesdk_app_id\": \"1:1098297880691:android:9d3eae587ac641bb41fa06\",\n        \"android_client_info\": {\n          \"package_name\": \"com.example.taxi_driver\"\n        }\n      },\n      \"oauth_client\": [],\n      \"api_key\": [\n        {\n          \"current_key\": \"AIzaSyA0J4jZojt_3hS3GcKFVVOrd4_YRBoB8LE\"\n        }\n      ],\n      \"services\": {\n        \"appinvite_service\": {\n          \"other_platform_oauth_client\": []\n        }\n      }\n    }\n  ],\n  \"configuration_version\": \"1\"\n}"
+        }
+    ]
+}

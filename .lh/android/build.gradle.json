@@ -1,0 +1,298 @@
+{
+    "sourceFile": "android/build.gradle",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 70,
+            "patches": [
+                {
+                    "date": 1720420504057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1720426355950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n     dependencies {\n         classpath 'com.android.tools.build:gradle:7.3.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.3.15'\n+       \n     }\n }\n \n allprojects {\n"
+                },
+                {
+                    "date": 1720426477570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n     dependencies {\n         classpath 'com.android.tools.build:gradle:7.3.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-       \n+        classpath 'com.google.gms:google-services:4.3.15'\n     }\n }\n \n allprojects {\n"
+                },
+                {
+                    "date": 1720520375228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,32 @@\n+buildscript {\n+    ext.kotlin_version = '1.7.10'\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+\n+    dependencies {\n+        classpath 'com.android.tools.build:gradle:7.3.0'\n+        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n+        \n+    }\n+}\n+\n+allprojects {\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+}\n+\n+rootProject.buildDir = '../build'\n+subprojects {\n+    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n+}\n+subprojects {\n+    project.evaluationDependsOn(':app')\n+}\n+\n+tasks.register(\"clean\", Delete) {\n+    delete rootProject.buildDir\n+}\n"
+                },
+                {
+                    "date": 1720520416006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,32 @@\n+buildscript {\n+    ext.kotlin_version = '1.7.10'\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+\n+    dependencies {\n+        classpath 'com.android.tools.build:gradle:7.3.0'\n+        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n+        classpath 'com.google.gms:google-services:4.3.15'\n+    }\n+}\n+\n+allprojects {\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+}\n+\n+rootProject.buildDir = '../build'\n+subprojects {\n+    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n+}\n+subprojects {\n+    project.evaluationDependsOn(':app')\n+}\n+\n+tasks.register(\"clean\", Delete) {\n+    delete rootProject.buildDir\n+}\n"
+                },
+                {
+                    "date": 1720600127909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,32 @@\n+buildscript {\n+    ext.kotlin_version = '1.6.10'\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+\n+    dependencies {\n+        classpath 'com.android.tools.build:gradle:4.1.0'\n+        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n+        classpath 'com.google.gms:google-services:4.3.15'\n+    }\n+}\n+\n+allprojects {\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+}\n+\n+rootProject.buildDir = '../build'\n+subprojects {\n+    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n+}\n+subprojects {\n+    project.evaluationDependsOn(':app')\n+}\n+\n+tasks.register(\"clean\", Delete) {\n+    delete rootProject.buildDir\n+}\n"
+                },
+                {
+                    "date": 1720600564012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n buildscript {\n-    ext.kotlin_version = '1.6.10'\n+    ext.kotlin_version = '1.5.0'\n     repositories {\n         google()\n         mavenCentral()\n     }\n"
+                },
+                {
+                    "date": 1720600669086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n buildscript {\n-    ext.kotlin_version = '1.5.0'\n+    ext.kotlin_version = '1.6.21'\n     repositories {\n         google()\n         mavenCentral()\n     }\n"
+                },
+                {
+                    "date": 1720603293194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,128 +0,0 @@\n-buildscript {\n-    ext.kotlin_version = '1.6.21'\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-\n-    dependencies {\n-        classpath 'com.android.tools.build:gradle:4.1.0'\n-        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.3.15'\n-    }\n-}\n-\n-allprojects {\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-}\n-\n-rootProject.buildDir = '../build'\n-subprojects {\n-    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n-}\n-subprojects {\n-    project.evaluationDependsOn(':app')\n-}\n-\n-tasks.register(\"clean\", Delete) {\n-    delete rootProject.buildDir\n-}\n-buildscript {\n-    ext.kotlin_version = '1.7.10'\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-\n-    dependencies {\n-        classpath 'com.android.tools.build:gradle:7.3.0'\n-        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.3.15'\n-    }\n-}\n-\n-allprojects {\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-}\n-\n-rootProject.buildDir = '../build'\n-subprojects {\n-    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n-}\n-subprojects {\n-    project.evaluationDependsOn(':app')\n-}\n-\n-tasks.register(\"clean\", Delete) {\n-    delete rootProject.buildDir\n-}\n-buildscript {\n-    ext.kotlin_version = '1.7.10'\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-\n-    dependencies {\n-        classpath 'com.android.tools.build:gradle:7.3.0'\n-        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        \n-    }\n-}\n-\n-allprojects {\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-}\n-\n-rootProject.buildDir = '../build'\n-subprojects {\n-    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n-}\n-subprojects {\n-    project.evaluationDependsOn(':app')\n-}\n-\n-tasks.register(\"clean\", Delete) {\n-    delete rootProject.buildDir\n-}\n-buildscript {\n-    ext.kotlin_version = '1.7.10'\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-\n-    dependencies {\n-        classpath 'com.android.tools.build:gradle:7.3.0'\n-        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.3.15'\n-    }\n-}\n-\n-allprojects {\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-}\n-\n-rootProject.buildDir = '../build'\n-subprojects {\n-    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n-}\n-subprojects {\n-    project.evaluationDependsOn(':app')\n-}\n-\n-tasks.register(\"clean\", Delete) {\n-    delete rootProject.buildDir\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1720603387020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,32 @@\n+buildscript {\n+    ext.kotlin_version = '1.6.21'\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n \n+    dependencies {\n+        classpath 'com.android.tools.build:gradle:4.1.0'\n+        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n+        classpath 'com.google.gms:google-services:4.3.15'\n+    }\n+}\n+\n+allprojects {\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+}\n+\n+rootProject.buildDir = '../build'\n+subprojects {\n+    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n+}\n+subprojects {\n+    project.evaluationDependsOn(':app')\n+}\n+\n+tasks.register(\"clean\", Delete) {\n+    delete rootProject.buildDir\n+}\n"
+                },
+                {
+                    "date": 1720615083762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n     dependencies {\n         classpath 'com.android.tools.build:gradle:4.1.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.3.15'\n+        classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n \n allprojects {\n"
+                },
+                {
+                    "date": 1720615130613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         mavenCentral()\n     }\n \n     dependencies {\n-        classpath 'com.android.tools.build:gradle:4.1.0'\n+        \n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n"
+                },
+                {
+                    "date": 1720615240949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         mavenCentral()\n     }\n \n     dependencies {\n-        \n+        classpath 'com.android.tools.build:gradle:4.1.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n"
+                },
+                {
+                    "date": 1720616047212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         mavenCentral()\n     }\n \n     dependencies {\n-        classpath 'com.android.tools.build:gradle:4.1.0'\n+        \n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n"
+                },
+                {
+                    "date": 1720616116172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         mavenCentral()\n     }\n \n     dependencies {\n-        \n+        classpath 'com.android.tools.build:gradle:4.1.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n"
+                },
+                {
+                    "date": 1720616289161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,32 @@\n+buildscript {\n+    ext.kotlin_version = '1.5.31'\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+\n+    dependencies {\n+        classpath 'com.android.tools.build:gradle:4.1.0'\n+        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n+        classpath 'com.google.gms:google-services:4.4.2'\n+    }\n+}\n+\n+allprojects {\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+}\n+\n+rootProject.buildDir = '../build'\n+subprojects {\n+    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n+}\n+subprojects {\n+    project.evaluationDependsOn(':app')\n+}\n+\n+tasks.register(\"clean\", Delete) {\n+    delete rootProject.buildDir\n+}\n"
+                },
+                {
+                    "date": 1720616408538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n buildscript {\n-    ext.kotlin_version = '1.5.31'\n+    ext.kotlin_version = '1.5.0'\n     repositories {\n         google()\n         mavenCentral()\n     }\n@@ -29,36 +29,4 @@\n \n tasks.register(\"clean\", Delete) {\n     delete rootProject.buildDir\n }\n-buildscript {\n-    ext.kotlin_version = '1.6.21'\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-\n-    dependencies {\n-        classpath 'com.android.tools.build:gradle:4.1.0'\n-        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.4.2'\n-    }\n-}\n-\n-allprojects {\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-}\n-\n-rootProject.buildDir = '../build'\n-subprojects {\n-    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n-}\n-subprojects {\n-    project.evaluationDependsOn(':app')\n-}\n-\n-tasks.register(\"clean\", Delete) {\n-    delete rootProject.buildDir\n-}\n"
+                },
+                {
+                    "date": 1720616535657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n buildscript {\n-    ext.kotlin_version = '1.5.0'\n+    ext.kotlin_version = '1.5.20'\n     repositories {\n         google()\n         mavenCentral()\n     }\n"
+                },
+                {
+                    "date": 1720616588337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         mavenCentral()\n     }\n \n     dependencies {\n-        classpath 'com.android.tools.build:gradle:4.1.0'\n+        \n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n"
+                },
+                {
+                    "date": 1720616689659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n buildscript {\n-    ext.kotlin_version = '1.5.20'\n+    ext.kotlin_version = '1.5.31'\n     repositories {\n         google()\n         mavenCentral()\n     }\n \n     dependencies {\n-        \n+        classpath 'com.android.tools.build:gradle:4.1.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n"
+                },
+                {
+                    "date": 1720616735922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n buildscript {\n+    ext.kotlin_version = '1.3.50'\n     ext.kotlin_version = '1.5.31'\n     repositories {\n         google()\n         mavenCentral()\n"
+                },
+                {
+                    "date": 1720616768752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n buildscript {\n-    ext.kotlin_version = '1.3.50'\n-    ext.kotlin_version = '1.5.31'\n+    ext.kotlin_version = '1.6.21'\n     repositories {\n         google()\n         mavenCentral()\n     }\n"
+                },
+                {
+                    "date": 1720616952711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n buildscript {\n-    ext.kotlin_version = '1.6.21'\n+    ext.kotlin_version = '1.7.1'\n     repositories {\n         google()\n         mavenCentral()\n     }\n"
+                },
+                {
+                    "date": 1720617034429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n buildscript {\n-    ext.kotlin_version = '1.7.1'\n+    ext.kotlin_version = '1.6.21'\n     repositories {\n         google()\n         mavenCentral()\n     }\n"
+                },
+                {
+                    "date": 1720618555486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n buildscript {\n-    ext.kotlin_version = '1.6.21'\n+    ext.kotlin_version = '2.0.0'\n     repositories {\n         google()\n         mavenCentral()\n     }\n"
+                },
+                {
+                    "date": 1720620312814,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,19 @@\n+\n+allprojects {\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+}\n+\n+rootProject.buildDir = '../build'\n+subprojects {\n+    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n+}\n+subprojects {\n+    project.evaluationDependsOn(':app')\n+}\n+\n+tasks.register(\"clean\", Delete) {\n+    delete rootProject.buildDir\n+}\n"
+                },
+                {
+                    "date": 1720620435340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,23 +1,4 @@\n-\n-allprojects {\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-}\n-\n-rootProject.buildDir = '../build'\n-subprojects {\n-    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n-}\n-subprojects {\n-    project.evaluationDependsOn(':app')\n-}\n-\n-tasks.register(\"clean\", Delete) {\n-    delete rootProject.buildDir\n-}\n buildscript {\n     ext.kotlin_version = '2.0.0'\n     repositories {\n         google()\n"
+                },
+                {
+                    "date": 1720623066573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n buildscript {\n-    ext.kotlin_version = '2.0.0'\n+    ext.kotlin_version = '1.6.21'\n     repositories {\n         google()\n         mavenCentral()\n     }\n \n     dependencies {\n         classpath 'com.android.tools.build:gradle:4.1.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.4.2'\n+        classpath 'com.google.gms:google-services:4.3.15'\n     }\n }\n \n allprojects {\n"
+                },
+                {
+                    "date": 1720623313212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n buildscript {\n-    ext.kotlin_version = '1.6.21'\n+    ext.kotlin_version = '2.0.0'\n     repositories {\n         google()\n         mavenCentral()\n     }\n \n     dependencies {\n         classpath 'com.android.tools.build:gradle:4.1.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.3.15'\n+        classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n \n allprojects {\n"
+                },
+                {
+                    "date": 1720623607053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n buildscript {\n-    ext.kotlin_version = '2.0.0'\n+    ext.kotlin_version = '1.7.10'\n     repositories {\n         google()\n         mavenCentral()\n     }\n \n     dependencies {\n-        classpath 'com.android.tools.build:gradle:4.1.0'\n+        classpath 'com.android.tools.build:gradle:7.3.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.4.2'\n+        classpath 'com.google.gms:google-services:4.3.15'\n     }\n }\n \n allprojects {\n"
+                },
+                {
+                    "date": 1720623939080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n buildscript {\n-    ext.kotlin_version = '1.7.10'\n+    ext.kotlin_version = '2.0.0'\n     repositories {\n         google()\n         mavenCentral()\n     }\n \n     dependencies {\n-        classpath 'com.android.tools.build:gradle:7.3.0'\n+        classpath 'com.android.tools.build:gradle:4.1.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.3.15'\n+        classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n \n allprojects {\n"
+                },
+                {
+                    "date": 1720626338069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n buildscript {\n-    ext.kotlin_version = '2.0.0'\n+    ext.kotlin_version = '1.8.0'\n     repositories {\n         google()\n         mavenCentral()\n     }\n \n     dependencies {\n-        classpath 'com.android.tools.build:gradle:4.1.0'\n+        classpath 'com.android.tools.build:gradle:7.2.2'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n"
+                },
+                {
+                    "date": 1720626468045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n buildscript {\n-    ext.kotlin_version = '1.8.0'\n+    ext.kotlin_version = '2.0.0'\n     repositories {\n         google()\n         mavenCentral()\n     }\n \n     dependencies {\n-        classpath 'com.android.tools.build:gradle:7.2.2'\n+        classpath 'com.android.tools.build:gradle:8.5'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n"
+                },
+                {
+                    "date": 1720626529320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,32 @@\n+buildscript {\n+    ext.kotlin_version = '2.0.0'\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+\n+    dependencies {\n+        classpath 'com.android.tools.build:gradle:4.1.0'\n+        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n+        classpath 'com.google.gms:google-services:4.4.2'\n+    }\n+}\n+\n+allprojects {\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+}\n+\n+rootProject.buildDir = '../build'\n+subprojects {\n+    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n+}\n+subprojects {\n+    project.evaluationDependsOn(':app')\n+}\n+\n+tasks.register(\"clean\", Delete) {\n+    delete rootProject.buildDir\n+}\n"
+                },
+                {
+                    "date": 1720627612870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n buildscript {\n-    ext.kotlin_version = '2.0.0'\n+    ext.kotlin_version = '1.7.10'\n     repositories {\n         google()\n         mavenCentral()\n     }\n \n     dependencies {\n-        classpath 'com.android.tools.build:gradle:4.1.0'\n+        classpath 'com.android.tools.build:gradle:7.2.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n@@ -29,36 +29,4 @@\n \n tasks.register(\"clean\", Delete) {\n     delete rootProject.buildDir\n }\n-buildscript {\n-    ext.kotlin_version = '2.0.0'\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-\n-    dependencies {\n-        classpath 'com.android.tools.build:gradle:8.5'\n-        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.4.2'\n-    }\n-}\n-\n-allprojects {\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-}\n-\n-rootProject.buildDir = '../build'\n-subprojects {\n-    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n-}\n-subprojects {\n-    project.evaluationDependsOn(':app')\n-}\n-\n-tasks.register(\"clean\", Delete) {\n-    delete rootProject.buildDir\n-}\n"
+                },
+                {
+                    "date": 1720627987336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,32 @@\n+buildscript {\n+    ext.kotlin_version = '1.7.10'\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+\n+    dependencies {\n+        classpath 'com.android.tools.build:gradle:7.2.0'\n+        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n+        classpath 'com.google.gms:google-services:4.3.15'\n+    }\n+}\n+\n+allprojects {\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+}\n+\n+rootProject.buildDir = '../build'\n+subprojects {\n+    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n+}\n+subprojects {\n+    project.evaluationDependsOn(':app')\n+}\n+\n+tasks.register(\"clean\", Delete) {\n+    delete rootProject.buildDir\n+}\n"
+                },
+                {
+                    "date": 1720631892921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n buildscript {\n-    ext.kotlin_version = '1.7.10'\n+    ext.kotlin_version = '1.7.1'\n     repositories {\n         google()\n         mavenCentral()\n     }\n@@ -29,36 +29,4 @@\n \n tasks.register(\"clean\", Delete) {\n     delete rootProject.buildDir\n }\n-buildscript {\n-    ext.kotlin_version = '1.7.10'\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-\n-    dependencies {\n-        classpath 'com.android.tools.build:gradle:7.2.0'\n-        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.4.2'\n-    }\n-}\n-\n-allprojects {\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-}\n-\n-rootProject.buildDir = '../build'\n-subprojects {\n-    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n-}\n-subprojects {\n-    project.evaluationDependsOn(':app')\n-}\n-\n-tasks.register(\"clean\", Delete) {\n-    delete rootProject.buildDir\n-}\n"
+                },
+                {
+                    "date": 1720632043940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n buildscript {\n-    ext.kotlin_version = '1.7.1'\n+    ext.kotlin_version = '1.7.10'\n     repositories {\n         google()\n         mavenCentral()\n     }\n"
+                },
+                {
+                    "date": 1720632822042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,32 @@\n+buildscript {\n+    ext.kotlin_version = '1.7.10'\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+\n+    dependencies {\n+        classpath 'com.android.tools.build:gradle:7.2.0'\n+        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n+        classpath 'com.google.gms:google-services:4.4.2'\n+    }\n+}\n+\n+allprojects {\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+}\n+\n+rootProject.buildDir = '../build'\n+subprojects {\n+    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n+}\n+subprojects {\n+    project.evaluationDependsOn(':app')\n+}\n+\n+tasks.register(\"clean\", Delete) {\n+    delete rootProject.buildDir\n+}\n"
+                },
+                {
+                    "date": 1720633007191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n buildscript {\n-    ext.kotlin_version = '1.7.10'\n+    ext.kotlin_version = '1.9.0'\n     repositories {\n         google()\n         mavenCentral()\n     }\n@@ -29,36 +29,4 @@\n \n tasks.register(\"clean\", Delete) {\n     delete rootProject.buildDir\n }\n-buildscript {\n-    ext.kotlin_version = '1.7.10'\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-\n-    dependencies {\n-        classpath 'com.android.tools.build:gradle:7.2.0'\n-        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.3.15'\n-    }\n-}\n-\n-allprojects {\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-}\n-\n-rootProject.buildDir = '../build'\n-subprojects {\n-    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n-}\n-subprojects {\n-    project.evaluationDependsOn(':app')\n-}\n-\n-tasks.register(\"clean\", Delete) {\n-    delete rootProject.buildDir\n-}\n"
+                },
+                {
+                    "date": 1720633338411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n buildscript {\n-    ext.kotlin_version = '1.9.0'\n+    ext.kotlin_version = '2.0.0'\n     repositories {\n         google()\n         mavenCentral()\n     }\n"
+                },
+                {
+                    "date": 1720633392622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         mavenCentral()\n     }\n \n     dependencies {\n-        classpath 'com.android.tools.build:gradle:7.2.0'\n+        \n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n"
+                },
+                {
+                    "date": 1720633424328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,32 @@\n+buildscript {\n+    ext.kotlin_version = '2.0.0'\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+\n+    dependencies {\n+        classpath 'com.android.tools.build:gradle:7.2.0'\n+        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n+        classpath 'com.google.gms:google-services:4.4.2'\n+    }\n+}\n+\n+allprojects {\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+}\n+\n+rootProject.buildDir = '../build'\n+subprojects {\n+    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n+}\n+subprojects {\n+    project.evaluationDependsOn(':app')\n+}\n+\n+tasks.register(\"clean\", Delete) {\n+    delete rootProject.buildDir\n+}\n"
+                },
+                {
+                    "date": 1720633551373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         mavenCentral()\n     }\n \n     dependencies {\n-        classpath 'com.android.tools.build:gradle:7.2.0'\n+        classpath 'com.android.tools.build:gradle:8.5'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n"
+                },
+                {
+                    "date": 1720633622327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,32 @@\n+buildscript {\n+    ext.kotlin_version = '2.0.0'\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+\n+    dependencies {\n+        classpath 'com.android.tools.build:gradle:7.1.2'\n+        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n+        classpath 'com.google.gms:google-services:4.4.2'\n+    }\n+}\n+\n+allprojects {\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+}\n+\n+rootProject.buildDir = '../build'\n+subprojects {\n+    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n+}\n+subprojects {\n+    project.evaluationDependsOn(':app')\n+}\n+\n+tasks.register(\"clean\", Delete) {\n+    delete rootProject.buildDir\n+}\n"
+                },
+                {
+                    "date": 1720633687478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n buildscript {\n-    ext.kotlin_version = '2.0.0'\n+    ext.kotlin_version = '1.9.24'\n     repositories {\n         google()\n         mavenCentral()\n     }\n \n     dependencies {\n-        classpath 'com.android.tools.build:gradle:7.1.2'\n+        classpath 'com.android.tools.build:gradle:7.2.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n"
+                },
+                {
+                    "date": 1720633762634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,32 @@\n+buildscript {\n+    ext.kotlin_version = '1.9.23'\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+\n+    dependencies {\n+        classpath 'com.android.tools.build:gradle:7.2.0'\n+        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n+        classpath 'com.google.gms:google-services:4.4.2'\n+    }\n+}\n+\n+allprojects {\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+}\n+\n+rootProject.buildDir = '../build'\n+subprojects {\n+    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n+}\n+subprojects {\n+    project.evaluationDependsOn(':app')\n+}\n+\n+tasks.register(\"clean\", Delete) {\n+    delete rootProject.buildDir\n+}\n"
+                },
+                {
+                    "date": 1720633826501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n buildscript {\n-    ext.kotlin_version = '1.9.23'\n+    ext.kotlin_version = '1.9.22'\n     repositories {\n         google()\n         mavenCentral()\n     }\n"
+                },
+                {
+                    "date": 1720633929097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n buildscript {\n-    ext.kotlin_version = '1.9.22'\n+    ext.kotlin_version = '2.0.0'\n     repositories {\n         google()\n         mavenCentral()\n     }\n@@ -29,100 +29,4 @@\n \n tasks.register(\"clean\", Delete) {\n     delete rootProject.buildDir\n }\n-buildscript {\n-    ext.kotlin_version = '1.9.24'\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-\n-    dependencies {\n-        classpath 'com.android.tools.build:gradle:7.2.0'\n-        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.4.2'\n-    }\n-}\n-\n-allprojects {\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-}\n-\n-rootProject.buildDir = '../build'\n-subprojects {\n-    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n-}\n-subprojects {\n-    project.evaluationDependsOn(':app')\n-}\n-\n-tasks.register(\"clean\", Delete) {\n-    delete rootProject.buildDir\n-}\n-buildscript {\n-    ext.kotlin_version = '2.0.0'\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-\n-    dependencies {\n-        classpath 'com.android.tools.build:gradle:8.5'\n-        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.4.2'\n-    }\n-}\n-\n-allprojects {\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-}\n-\n-rootProject.buildDir = '../build'\n-subprojects {\n-    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n-}\n-subprojects {\n-    project.evaluationDependsOn(':app')\n-}\n-\n-tasks.register(\"clean\", Delete) {\n-    delete rootProject.buildDir\n-}\n-buildscript {\n-    ext.kotlin_version = '2.0.0'\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-\n-    dependencies {\n-        \n-        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.4.2'\n-    }\n-}\n-\n-allprojects {\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-}\n-\n-rootProject.buildDir = '../build'\n-subprojects {\n-    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n-}\n-subprojects {\n-    project.evaluationDependsOn(':app')\n-}\n-\n-tasks.register(\"clean\", Delete) {\n-    delete rootProject.buildDir\n-}\n"
+                },
+                {
+                    "date": 1720634645308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,13 @@\n-buildscript {\n-    ext.kotlin_version = '2.0.0'\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n \n+\n     dependencies {\n         classpath 'com.android.tools.build:gradle:7.2.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n-}\n \n+\n allprojects {\n     repositories {\n         google()\n         mavenCentral()\n"
+                },
+                {
+                    "date": 1720634687346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \n \n     dependencies {\n-        classpath 'com.android.tools.build:gradle:7.2.0'\n+        classpath 'com.android.tools.build:gradle:8.5'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n \n"
+                },
+                {
+                    "date": 1720634762103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,6 @@\n \n \n-    dependencies {\n-        classpath 'com.android.tools.build:gradle:8.5'\n-        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.4.2'\n-    }\n-\n-\n allprojects {\n     repositories {\n         google()\n         mavenCentral()\n"
+                },
+                {
+                    "date": 1720634923103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,12 @@\n \n \n+    dependencies {\n+        \n+        classpath 'com.google.gms:google-services:4.4.2'\n+    }\n+\n+\n allprojects {\n     repositories {\n         google()\n         mavenCentral()\n"
+                },
+                {
+                    "date": 1720634954058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,17 @@\n+buildscript {\n+    ext.kotlin_version = '2.0.0'\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n \n-\n     dependencies {\n         \n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n+}\n \n-\n allprojects {\n     repositories {\n         google()\n         mavenCentral()\n"
+                },
+                {
+                    "date": 1720634984899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,10 @@\n         mavenCentral()\n     }\n \n     dependencies {\n-        \n+        classpath 'com.android.tools.build:gradle:7.2.0'\n+        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n \n"
+                },
+                {
+                    "date": 1720636296506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n buildscript {\n-    ext.kotlin_version = '2.0.0'\n+    ext.kotlin_version = '1.8.20'\n     repositories {\n         google()\n         mavenCentral()\n     }\n \n     dependencies {\n-        classpath 'com.android.tools.build:gradle:7.2.0'\n+        classpath 'com.android.tools.build:gradle:7.4.1'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n"
+                },
+                {
+                    "date": 1720636536694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n buildscript {\n-    ext.kotlin_version = '1.8.20'\n+    ext.kotlin_version = '2.0.0'\n     repositories {\n         google()\n         mavenCentral()\n     }\n \n     dependencies {\n-        classpath 'com.android.tools.build:gradle:7.4.1'\n+        classpath 'com.android.tools.build:gradle:7.2.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n"
+                },
+                {
+                    "date": 1720677299032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n     dependencies {\n         classpath 'com.android.tools.build:gradle:7.2.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.4.2'\n+        classpath 'com.google.gms:google-services:4.4.0'\n     }\n }\n \n allprojects {\n"
+                },
+                {
+                    "date": 1720677370707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,32 @@\n+buildscript {\n+    ext.kotlin_version = '2.0.0'\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+\n+    dependencies {\n+        classpath 'com.android.tools.build:gradle:7.2.0'\n+        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n+        classpath 'com.google.gms:google-services:4.2.0'\n+    }\n+}\n+\n+allprojects {\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+}\n+\n+rootProject.buildDir = '../build'\n+subprojects {\n+    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n+}\n+subprojects {\n+    project.evaluationDependsOn(':app')\n+}\n+\n+tasks.register(\"clean\", Delete) {\n+    delete rootProject.buildDir\n+}\n"
+                },
+                {
+                    "date": 1720677490945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n     dependencies {\n         classpath 'com.android.tools.build:gradle:7.2.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.2.0'\n+        classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n \n allprojects {\n"
+                },
+                {
+                    "date": 1720677712808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,32 @@\n+buildscript {\n+    ext.kotlin_version = '2.0.0'\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+\n+    dependencies {\n+        classpath 'com.android.tools.build:gradle:7.2.0'\n+        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n+        classpath 'com.google.gms:google-services:4.4.1'\n+    }\n+}\n+\n+allprojects {\n+    repositories {\n+        google()\n+        mavenCentral()\n+    }\n+}\n+\n+rootProject.buildDir = '../build'\n+subprojects {\n+    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n+}\n+subprojects {\n+    project.evaluationDependsOn(':app')\n+}\n+\n+tasks.register(\"clean\", Delete) {\n+    delete rootProject.buildDir\n+}\n"
+                },
+                {
+                    "date": 1720677773787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n     dependencies {\n         classpath 'com.android.tools.build:gradle:7.2.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.4.1'\n+        classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n \n allprojects {\n"
+                },
+                {
+                    "date": 1720692760308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n buildscript {\n-    ext.kotlin_version = '2.0.0'\n+    ext.kotlin_version = '1.7.10'\n     repositories {\n         google()\n         mavenCentral()\n     }\n@@ -29,68 +29,4 @@\n \n tasks.register(\"clean\", Delete) {\n     delete rootProject.buildDir\n }\n-buildscript {\n-    ext.kotlin_version = '2.0.0'\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-\n-    dependencies {\n-        classpath 'com.android.tools.build:gradle:7.2.0'\n-        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.4.2'\n-    }\n-}\n-\n-allprojects {\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-}\n-\n-rootProject.buildDir = '../build'\n-subprojects {\n-    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n-}\n-subprojects {\n-    project.evaluationDependsOn(':app')\n-}\n-\n-tasks.register(\"clean\", Delete) {\n-    delete rootProject.buildDir\n-}\n-buildscript {\n-    ext.kotlin_version = '2.0.0'\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-\n-    dependencies {\n-        classpath 'com.android.tools.build:gradle:7.2.0'\n-        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n-        classpath 'com.google.gms:google-services:4.4.0'\n-    }\n-}\n-\n-allprojects {\n-    repositories {\n-        google()\n-        mavenCentral()\n-    }\n-}\n-\n-rootProject.buildDir = '../build'\n-subprojects {\n-    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n-}\n-subprojects {\n-    project.evaluationDependsOn(':app')\n-}\n-\n-tasks.register(\"clean\", Delete) {\n-    delete rootProject.buildDir\n-}\n"
+                },
+                {
+                    "date": 1720692897618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n buildscript {\n-    ext.kotlin_version = '1.7.10'\n+    ext.kotlin_version = '2.0.0'\n     repositories {\n         google()\n         mavenCentral()\n     }\n"
+                },
+                {
+                    "date": 1720693708130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         mavenCentral()\n     }\n \n     dependencies {\n-        classpath 'com.android.tools.build:gradle:7.2.0'\n+        \n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n"
+                },
+                {
+                    "date": 1723410846130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         mavenCentral()\n     }\n \n     dependencies {\n-        \n+        classpath 'com.android.tools.build:gradle:7.6.3'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n"
+                },
+                {
+                    "date": 1723411021533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         mavenCentral()\n     }\n \n     dependencies {\n-        classpath 'com.android.tools.build:gradle:7.6.3'\n+        \n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n"
+                },
+                {
+                    "date": 1723411197084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         mavenCentral()\n     }\n \n     dependencies {\n-        \n+         classpath 'com.android.tools.build:gradle:7.3.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n"
+                },
+                {
+                    "date": 1723411332017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,10 @@\n         mavenCentral()\n     }\n \n     dependencies {\n-         classpath 'com.android.tools.build:gradle:7.3.0'\n+        \n+        //classpath 'com.android.tools.build:gradle:7.3.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n }\n"
+                },
+                {
+                    "date": 1723411444916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         mavenCentral()\n     }\n \n     dependencies {\n-        \n+        classpath 'com.android.tools.build:gradle:7.3.0'\n         //classpath 'com.android.tools.build:gradle:7.3.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n"
+                },
+                {
+                    "date": 1725698382980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         mavenCentral()\n     }\n \n     dependencies {\n-        classpath 'com.android.tools.build:gradle:7.3.0'\n+        classpath 'com.android.tools.build:gradle:8.5'\n         //classpath 'com.android.tools.build:gradle:7.3.0'\n         classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n         classpath 'com.google.gms:google-services:4.4.2'\n     }\n"
+                }
+            ],
+            "date": 1720420504057,
+            "name": "Commit-0",
+            "content": "buildscript {\n    ext.kotlin_version = '1.7.10'\n    repositories {\n        google()\n        mavenCentral()\n    }\n\n    dependencies {\n        classpath 'com.android.tools.build:gradle:7.3.0'\n        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version\"\n        classpath 'com.google.gms:google-services:4.3.15'\n    }\n}\n\nallprojects {\n    repositories {\n        google()\n        mavenCentral()\n    }\n}\n\nrootProject.buildDir = '../build'\nsubprojects {\n    project.buildDir = \"${rootProject.buildDir}/${project.name}\"\n}\nsubprojects {\n    project.evaluationDependsOn(':app')\n}\n\ntasks.register(\"clean\", Delete) {\n    delete rootProject.buildDir\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/view/menu/earning_vie.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1720090822540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1720090822540,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\nimport 'package:taxi_driver/common/color_extension.dart';\n\nclass EarningVie extends StatefulWidget {\n  const EarningVie({super.key});\n\n\n  @override\n  State<EarningVie> createState() => _EarningVieState();\n\n}\nclass _EarningVieState extends State<EarningVie> {\n\n\n  @override\nWidget build(BuildContext context) {\n\n  return Scaffold(\n    appBar: AppBar(\n        elevation: 0.5,\n        backgroundColor: Colors.white,\n        leading: IconButton(\n        onPressed: (){\n          context.pop();\n        }, \n        icon: Image.asset(\n          \"assets/img/back.png\", \n        width: 25, \n        height: 25,\n        ),\n\n        ),\n        centerTitle: true,\n        title: Text(\n          \"Earning\", \n          style: TextStyle(\n            color: TColor.primaryText, \n            fontSize: 18, \n            fontWeight: \n            FontWeight.w800,\n            ),\n            ),\n        ),\n  );\n\n}\n}\n    "
+        }
+    ]
+}

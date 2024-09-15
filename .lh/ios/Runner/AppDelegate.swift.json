@@ -1,0 +1,46 @@
+{
+    "sourceFile": "ios/Runner/AppDelegate.swift",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1725677588949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1725690000808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n import Flutter\n import UIKit\n-import GoogleMaps\n+//import GoogleMaps\n \n @main\n @objc class AppDelegate: FlutterAppDelegate {\n   override func application(\n     _ application: UIApplication,\n     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?\n   ) -> Bool {\n-    GMSServices.provideAPIKey(\"AIzaSyDwjqwmCygcV68E2wOE7HcpUEgAxh8E-7s\")\n+    ///GMSServices.provideAPIKey(\"AIzaSyDwjqwmCygcV68E2wOE7HcpUEgAxh8E-7s\")\n \n \n     GeneratedPluginRegistrant.register(with: self)\n     return super.application(application, didFinishLaunchingWithOptions: launchOptions)\n"
+                },
+                {
+                    "date": 1725690747877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n import Flutter\n import UIKit\n-//import GoogleMaps\n+import GoogleMaps\n \n @main\n @objc class AppDelegate: FlutterAppDelegate {\n   override func application(\n     _ application: UIApplication,\n     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?\n   ) -> Bool {\n-    ///GMSServices.provideAPIKey(\"AIzaSyDwjqwmCygcV68E2wOE7HcpUEgAxh8E-7s\")\n+    GMSServices.provideAPIKey(\"AIzaSyDwjqwmCygcV68E2wOE7HcpUEgAxh8E-7s\")\n \n \n     GeneratedPluginRegistrant.register(with: self)\n     return super.application(application, didFinishLaunchingWithOptions: launchOptions)\n"
+                },
+                {
+                    "date": 1725698291190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n import Flutter\n import UIKit\n-import GoogleMaps\n+//import GoogleMaps\n \n @main\n @objc class AppDelegate: FlutterAppDelegate {\n   override func application(\n     _ application: UIApplication,\n     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?\n   ) -> Bool {\n-    GMSServices.provideAPIKey(\"AIzaSyDwjqwmCygcV68E2wOE7HcpUEgAxh8E-7s\")\n+    //GMSServices.provideAPIKey(\"AIzaSyDwjqwmCygcV68E2wOE7HcpUEgAxh8E-7s\")\n \n \n     GeneratedPluginRegistrant.register(with: self)\n     return super.application(application, didFinishLaunchingWithOptions: launchOptions)\n"
+                },
+                {
+                    "date": 1725699003793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,19 @@\n+import Flutter\n+import UIKit\n+import GoogleMaps\n+\n+@main\n+@objc class AppDelegate: FlutterAppDelegate {\n+  override func application(\n+    _ application: UIApplication,\n+    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?\n+  ) -> Bool {\n+    GMSServices.provideAPIKey(\"AIzaSyDwjqwmCygcV68E2wOE7HcpUEgAxh8E-7s\")\n+\n+\n+    GeneratedPluginRegistrant.register(with: self)\n+    return super.application(application, didFinishLaunchingWithOptions: launchOptions)\n+  }\n+}\n+\n+\n"
+                },
+                {
+                    "date": 1725785049835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n import Flutter\n import UIKit\n-import GoogleMaps\n+//import GoogleMaps\n \n @main\n @objc class AppDelegate: FlutterAppDelegate {\n   override func application(\n     _ application: UIApplication,\n     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?\n   ) -> Bool {\n-    GMSServices.provideAPIKey(\"AIzaSyDwjqwmCygcV68E2wOE7HcpUEgAxh8E-7s\")\n+    //GMSServices.provideAPIKey(\"AIzaSyDwjqwmCygcV68E2wOE7HcpUEgAxh8E-7s\")\n \n \n     GeneratedPluginRegistrant.register(with: self)\n     return super.application(application, didFinishLaunchingWithOptions: launchOptions)\n"
+                },
+                {
+                    "date": 1726036678178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,32 +7,13 @@\n   override func application(\n     _ application: UIApplication,\n     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?\n   ) -> Bool {\n-    //GMSServices.provideAPIKey(\"AIzaSyDwjqwmCygcV68E2wOE7HcpUEgAxh8E-7s\")\n+    GMSServices.provideAPIKey(\"AIzaSyDwjqwmCygcV68E2wOE7HcpUEgAxh8E-7s\")\n \n \n     GeneratedPluginRegistrant.register(with: self)\n     return super.application(application, didFinishLaunchingWithOptions: launchOptions)\n   }\n }\n \n \n-import Flutter\n-import UIKit\n-//import GoogleMaps\n-\n-@main\n-@objc class AppDelegate: FlutterAppDelegate {\n-  override func application(\n-    _ application: UIApplication,\n-    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?\n-  ) -> Bool {\n-    //GMSServices.provideAPIKey(\"AIzaSyDwjqwmCygcV68E2wOE7HcpUEgAxh8E-7s\")\n-\n-\n-    GeneratedPluginRegistrant.register(with: self)\n-    return super.application(application, didFinishLaunchingWithOptions: launchOptions)\n-  }\n-}\n-\n-\n"
+                },
+                {
+                    "date": 1726044962534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   override func application(\n     _ application: UIApplication,\n     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?\n   ) -> Bool {\n-    GMSServices.provideAPIKey(\"AIzaSyDwjqwmCygcV68E2wOE7HcpUEgAxh8E-7s\")\n+    //GMSServices.provideAPIKey(\"AIzaSyDwjqwmCygcV68E2wOE7HcpUEgAxh8E-7s\")\n \n \n     GeneratedPluginRegistrant.register(with: self)\n     return super.application(application, didFinishLaunchingWithOptions: launchOptions)\n"
+                }
+            ],
+            "date": 1725677588949,
+            "name": "Commit-0",
+            "content": "import Flutter\nimport UIKit\nimport GoogleMaps\n\n@main\n@objc class AppDelegate: FlutterAppDelegate {\n  override func application(\n    _ application: UIApplication,\n    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?\n  ) -> Bool {\n    GMSServices.provideAPIKey(\"AIzaSyDwjqwmCygcV68E2wOE7HcpUEgAxh8E-7s\")\n\n\n    GeneratedPluginRegistrant.register(with: self)\n    return super.application(application, didFinishLaunchingWithOptions: launchOptions)\n  }\n}\n\n\n"
+        }
+    ]
+}

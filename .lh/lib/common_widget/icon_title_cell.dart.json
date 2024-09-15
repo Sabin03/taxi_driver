@@ -1,0 +1,30 @@
+{
+    "sourceFile": "lib/common_widget/icon_title_cell.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1720626909276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723425033168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,48 @@\n   const IconTitleCell({super.key, required this.title, required this.icon, required this.onPressed, this.width = 50});\n \n   @override\n   Widget build(BuildContext context) {\n+    return InkWell(\n+      onTap: onPressed,\n+      child: Column(\n+        mainAxisSize: MainAxisSize.min,\n+      \n+        children: [\n+          Image.asset(\n+            icon,\n+            width: width,\n+            height: width,\n+          ),\n+          const SizedBox(\n+            height: 4,\n+          ),\n+          Text(\n+            title,\n+            style: TextStyle(\n+              color: TColor.primaryTextW,\n+              fontSize: 16,\n+            ),\n+          )\n+        ],\n+      ),\n+    );\n+  }\n+}\n+\n+/*import 'package:flutter/material.dart';\n+import 'package:taxi_driver/common/color_extension.dart';\n+\n+class IconTitleCell extends StatelessWidget {\n+  final String title;\n+  final String icon;\n+  final double width;\n+  final VoidCallback onPressed;\n+\n+  const IconTitleCell({super.key, required this.title, required this.icon, required this.onPressed, this.width = 50});\n+\n+  @override\n+  Widget build(BuildContext context) {\n     return  InkWell(\n       onTap: onPressed,\n       child: Column(\n         mainAxisSize: MainAxisSize.min,\n@@ -34,5 +74,5 @@\n                       ],\n                     ),\n     );\n   }\n-}\n\\ No newline at end of file\n+}*/\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1725464779587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,43 +36,4 @@\n       ),\n     );\n   }\n }\n-\n-/*import 'package:flutter/material.dart';\n-import 'package:taxi_driver/common/color_extension.dart';\n-\n-class IconTitleCell extends StatelessWidget {\n-  final String title;\n-  final String icon;\n-  final double width;\n-  final VoidCallback onPressed;\n-\n-  const IconTitleCell({super.key, required this.title, required this.icon, required this.onPressed, this.width = 50});\n-\n-  @override\n-  Widget build(BuildContext context) {\n-    return  InkWell(\n-      onTap: onPressed,\n-      child: Column(\n-        mainAxisSize: MainAxisSize.min,\n-                      children: [\n-                        Image.asset(\n-                          icon,\n-                          width: width, \n-                          height: width,\n-                          ),\n-      \n-                          const SizedBox(height: 4,),\n-      \n-                          Text(\n-                              title,\n-                              style:  TextStyle(color: TColor.primaryTextW,\n-                              fontSize: 16,\n-                              \n-                              ),\n-                            ),\n-                      ],\n-                    ),\n-    );\n-  }\n-}*/\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1725804929455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,5 +35,5 @@\n         ],\n       ),\n     );\n   }\n-}\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1720626909276,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\nimport 'package:taxi_driver/common/color_extension.dart';\n\nclass IconTitleCell extends StatelessWidget {\n  final String title;\n  final String icon;\n  final double width;\n  final VoidCallback onPressed;\n\n  const IconTitleCell({super.key, required this.title, required this.icon, required this.onPressed, this.width = 50});\n\n  @override\n  Widget build(BuildContext context) {\n    return  InkWell(\n      onTap: onPressed,\n      child: Column(\n        mainAxisSize: MainAxisSize.min,\n                      children: [\n                        Image.asset(\n                          icon,\n                          width: width, \n                          height: width,\n                          ),\n      \n                          const SizedBox(height: 4,),\n      \n                          Text(\n                              title,\n                              style:  TextStyle(color: TColor.primaryTextW,\n                              fontSize: 16,\n                              \n                              ),\n                            ),\n                      ],\n                    ),\n    );\n  }\n}"
+        }
+    ]
+}

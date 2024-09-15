@@ -1,0 +1,58 @@
+{
+    "sourceFile": ".vscode/settings.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1723026217975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1724843521485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n {\n-    \"cmake.ignoreCMakeListsMissing\": true\n+    \"cmake.ignoreCMakeListsMissing\": true,\n+    \"debug.javascript.autoAttachFilter\": \"always\"\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1724857233335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n {\n     \"cmake.ignoreCMakeListsMissing\": true,\n-    \"debug.javascript.autoAttachFilter\": \"always\"\n+    \"debug.javascript.autoAttachFilter\": \"always\",\n+    \"debug.allowBreakpointsEverywhere\": true\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1724857243770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n {\n     \"cmake.ignoreCMakeListsMissing\": true,\n     \"debug.javascript.autoAttachFilter\": \"always\",\n-    \"debug.allowBreakpointsEverywhere\": true\n+    \"debug.allowBreakpointsEverywhere\": false\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1724857308540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n {\n     \"cmake.ignoreCMakeListsMissing\": true,\n     \"debug.javascript.autoAttachFilter\": \"always\",\n-    \"debug.allowBreakpointsEverywhere\": false\n+    \"debug.allowBreakpointsEverywhere\": false,\n+    \"debug.javascript.breakOnConditionalError\": true\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1725083514961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n {\n     \"cmake.ignoreCMakeListsMissing\": true,\n     \"debug.javascript.autoAttachFilter\": \"always\",\n     \"debug.allowBreakpointsEverywhere\": false,\n-    \"debug.javascript.breakOnConditionalError\": true\n+    \"debug.javascript.breakOnConditionalError\": false,\n+    \"pieces.cloudCapabilities\": \"Blended\"\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1725083516934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,7 @@\n     \"cmake.ignoreCMakeListsMissing\": true,\n     \"debug.javascript.autoAttachFilter\": \"always\",\n     \"debug.allowBreakpointsEverywhere\": false,\n     \"debug.javascript.breakOnConditionalError\": false,\n-    \"pieces.cloudCapabilities\": \"Blended\"\n+    \"pieces.cloudCapabilities\": \"Blended\",\n+    \"pieces.telemetry\": true\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1725686954285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,7 @@\n     \"debug.javascript.autoAttachFilter\": \"always\",\n     \"debug.allowBreakpointsEverywhere\": false,\n     \"debug.javascript.breakOnConditionalError\": false,\n     \"pieces.cloudCapabilities\": \"Blended\",\n-    \"pieces.telemetry\": true\n+    \"pieces.telemetry\": true,\n+    \"Codegeex.GenerationPreference\": \"line by line\"\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1725686967438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,7 @@\n     \"debug.allowBreakpointsEverywhere\": false,\n     \"debug.javascript.breakOnConditionalError\": false,\n     \"pieces.cloudCapabilities\": \"Blended\",\n     \"pieces.telemetry\": true,\n-    \"Codegeex.GenerationPreference\": \"line by line\"\n+    \"Codegeex.GenerationPreference\": \"automatic\",\n+    \"Codegeex.CommitMessage.LanguagePreference\": \"English\"\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1725686973710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,7 @@\n     \"debug.javascript.breakOnConditionalError\": false,\n     \"pieces.cloudCapabilities\": \"Blended\",\n     \"pieces.telemetry\": true,\n     \"Codegeex.GenerationPreference\": \"automatic\",\n-    \"Codegeex.CommitMessage.LanguagePreference\": \"English\"\n+    \"Codegeex.CommitMessage.LanguagePreference\": \"English\",\n+    \"Codegeex.Comment.LanguagePreference\": \"English\"\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1725687347024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,8 @@\n     \"pieces.cloudCapabilities\": \"Blended\",\n     \"pieces.telemetry\": true,\n     \"Codegeex.GenerationPreference\": \"automatic\",\n     \"Codegeex.CommitMessage.LanguagePreference\": \"English\",\n-    \"Codegeex.Comment.LanguagePreference\": \"English\"\n+    \"Codegeex.Comment.LanguagePreference\": \"English\",\n+    \"Codegeex.Chat.LanguagePreference\": \"English\",\n+    \"CodeGPT.apiKey\": \"CodeGPT Plus Beta\"\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1723026217975,
+            "name": "Commit-0",
+            "content": "{\n    \"cmake.ignoreCMakeListsMissing\": true\n}"
+        }
+    ]
+}

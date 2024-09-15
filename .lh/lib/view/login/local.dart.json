@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/view/login/local.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1725448729960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1725448729960,
+            "name": "Commit-0",
+            "content": "import 'package:intl/intl.dart';\n\nclass Locale {\n  static const List<Locale> languages = [\n    Locale('ja', 'Japanese'),\n    Locale('ne', 'Nepali'),\n    Locale('en', 'English'),\n    Locale('hi', 'Hindi'),\n  ];\n\n  final String code;\n  final String name;\n\n  const Locale(this.code, this.name);\n}"
+        }
+    ]
+}

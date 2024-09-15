@@ -1,0 +1,30 @@
+{
+    "sourceFile": "lib/cubit/login_state.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1720714325726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1722744240053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n part of 'login_cubit.dart';\n \n+\n+\n sealed class LoginState extends Equatable {\n   const LoginState();\n \n   @override\n@@ -10,11 +12,31 @@\n final class LoginInitialState extends LoginState {}\n final class LoginHUDState extends LoginState {}\n final class LoginApiResultState extends LoginState {}\n final class LoginErrorState extends LoginState {\n+  final  String errorMSG;\n+  const LoginErrorState(this.errorMSG);\n \n+  @override\n+  List<Object> get props => [];\n+}\n+\n+\n+\n+/*sealed class LoginState extends Equatable {\n+  const LoginState();\n+\n+  @override\n+  List<Object> get props => [];\n+}\n+\n+final class LoginInitialState extends LoginState {}\n+final class LoginHUDState extends LoginState {}\n+final class LoginApiResultState extends LoginState {}\n+final class LoginErrorState extends LoginState {\n+\n   final  String errorMSG;\n   const LoginErrorState(this.errorMSG);\n \n   @override\n   List<Object> get props => [];\n-}\n+}*/\n"
+                },
+                {
+                    "date": 1725468531643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+part of 'login_cubit.dart';\n+\n+\n+\n+sealed class LoginState extends Equatable {\n+  const LoginState();\n+\n+  @override\n+  List<Object> get props => [];\n+}\n+\n+final class LoginInitialState extends LoginState {}\n+final class LoginHUDState extends LoginState {}\n+final class LoginApiResultState extends LoginState {}\n+final class LoginErrorState extends LoginState {\n+  final  String errorMSG;\n+  const LoginErrorState(this.errorMSG);\n+\n+  @override\n+  List<Object> get props => [];\n+}\n+\n+\n+\n"
+                },
+                {
+                    "date": 1725805492336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+part of 'login_cubit.dart';\n+\n+sealed class LoginState extends Equatable {\n+  const LoginState();\n+\n+  @override\n+  List<Object> get props => [];\n+}\n+\n+final class LoginInitialState extends LoginState {}\n+final class LoginHUDState extends LoginState {}\n+final class LoginApiResultState extends LoginState {}\n+final class LoginErrorState extends LoginState {\n+  final  String errorMSG;\n+  const LoginErrorState(this.errorMSG);\n+\n+  @override\n+  List<Object> get props => [];\n+}\n+\n"
+                }
+            ],
+            "date": 1720714325726,
+            "name": "Commit-0",
+            "content": "part of 'login_cubit.dart';\n\nsealed class LoginState extends Equatable {\n  const LoginState();\n\n  @override\n  List<Object> get props => [];\n}\n\nfinal class LoginInitialState extends LoginState {}\nfinal class LoginHUDState extends LoginState {}\nfinal class LoginApiResultState extends LoginState {}\nfinal class LoginErrorState extends LoginState {\n\n  final  String errorMSG;\n  const LoginErrorState(this.errorMSG);\n\n  @override\n  List<Object> get props => [];\n}\n"
+        }
+    ]
+}

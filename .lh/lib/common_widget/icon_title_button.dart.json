@@ -1,0 +1,30 @@
+{
+    "sourceFile": "lib/common_widget/icon_title_button.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1719743158775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723424977078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,47 @@\n   final String icon;\n   final VoidCallback onPressed;\n \n   const IconTitleButton(\n+      {super.key,\n+      required this.title,\n+      required this.icon,\n+      required this.onPressed});\n+\n+  @override\n+  Widget build(BuildContext context) {\n+    return InkWell(\n+      onTap: onPressed,\n+      child: Column(\n+        children: [\n+          Image.asset(\n+            icon,\n+            width: 35,\n+            height: 35,\n+          ),\n+          const SizedBox(\n+            height: 4,\n+          ),\n+          Text(\n+            title,\n+            style: TextStyle(color: TColor.primaryText, fontSize: 16),\n+          ),\n+        ],\n+      ),\n+    );\n+  }\n+}\n+\n+\n+/*import 'package:flutter/material.dart';\n+import 'package:taxi_driver/common/color_extension.dart';\n+\n+class IconTitleButton extends StatelessWidget {\n+  final String title;\n+  final String icon;\n+  final VoidCallback onPressed;\n+\n+  const IconTitleButton(\n     {super.key, required this.title, \n     required this.icon, \n     required this.onPressed});\n \n@@ -37,5 +76,5 @@\n                     ),\n                     \n     );\n   }\n-}\n\\ No newline at end of file\n+}*/\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1725464792002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,47 +34,4 @@\n       ),\n     );\n   }\n }\n-\n-\n-/*import 'package:flutter/material.dart';\n-import 'package:taxi_driver/common/color_extension.dart';\n-\n-class IconTitleButton extends StatelessWidget {\n-  final String title;\n-  final String icon;\n-  final VoidCallback onPressed;\n-\n-  const IconTitleButton(\n-    {super.key, required this.title, \n-    required this.icon, \n-    required this.onPressed});\n-\n-\n-  @override\n-  Widget build(BuildContext context) {\n-    return InkWell(\n-      onTap: onPressed ,\n-      child: Column(\n-        children: [\n-                      Image.asset(\n-                       icon,\n-                        width: 35, \n-                        height: 35,\n-                        ),\n-                      const SizedBox(height: 4,),\n-                         Text(\n-                          title, \n-                          style: TextStyle(\n-                            color: TColor.primaryText,\n-                            fontSize: 16,\n-                            \n-                          ),\n-                        ),\n-                     \n-                    ],\n-                    ),\n-                    \n-    );\n-  }\n-}*/\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1725804909996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import 'package:flutter/material.dart';\n-import 'package:taxi_driver/common/color_extension.dart';\n \n+import '../common/color_extension.dart';\n+\n class IconTitleButton extends StatelessWidget {\n   final String title;\n   final String icon;\n   final VoidCallback onPressed;\n"
+                }
+            ],
+            "date": 1719743158775,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\nimport 'package:taxi_driver/common/color_extension.dart';\n\nclass IconTitleButton extends StatelessWidget {\n  final String title;\n  final String icon;\n  final VoidCallback onPressed;\n\n  const IconTitleButton(\n    {super.key, required this.title, \n    required this.icon, \n    required this.onPressed});\n\n\n  @override\n  Widget build(BuildContext context) {\n    return InkWell(\n      onTap: onPressed ,\n      child: Column(\n        children: [\n                      Image.asset(\n                       icon,\n                        width: 35, \n                        height: 35,\n                        ),\n                      const SizedBox(height: 4,),\n                         Text(\n                          title, \n                          style: TextStyle(\n                            color: TColor.primaryText,\n                            fontSize: 16,\n                            \n                          ),\n                        ),\n                     \n                    ],\n                    ),\n                    \n    );\n  }\n}"
+        }
+    ]
+}

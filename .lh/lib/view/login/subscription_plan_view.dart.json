@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/view/login/subscription_plan_view.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1722774442115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1722774442115,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\nimport 'package:taxi_driver/common/color_extension.dart';\nimport 'package:taxi_driver/common_widget/plan_row.dart';\n\n\n\n\nclass SubscriptionPlanView extends StatefulWidget {\n  const SubscriptionPlanView({super.key});\n\n  @override\nState<SubscriptionPlanView> createState() => _SubscriptionPlanViewState();\n}\n\nclass  _SubscriptionPlanViewState extends State<SubscriptionPlanView>{\n\nList planArr = [\n  {\n    \"name\":\"Basic plan\",\n    \"time\":\"1 Month\",\n    \"rides\":\"10 rides Everyday\",\n    \"cash_rides\":\"• 2 Cash rides\",\n    \"km\":\"• 50 km travel rides\",\n    \"price\":\"TRY FREE\"\n  },\n  {\n    \"name\":\"Classic plan\",\n    \"time\":\"3 Month\",\n    \"rides\":\"10 rides Everyday\",\n    \"cash_rides\":\"• 2 Cash rides\",\n    \"km\":\"• 50 km travel rides\",\n    \"price\":\"Buy AT \\$19.49\"\n  },\n];\n\n\n  @override\n  Widget build(BuildContext context) {\n   \n    return Scaffold(\n      appBar: AppBar(\n        backgroundColor: Colors.white,\n        elevation: 1,\n        leading: IconButton(\n        onPressed: (){\n          context.pop();\n        }, \n        icon: Image.asset(\n          \"assets/img/back.png\", \n        width: 25, \n        height: 25,),),\n\n        \n          centerTitle: true,\n        title: Text(\n                  \"Subscription Plan\",\n                  style: TextStyle(\n                    color: TColor.primaryText,\n                    fontSize: 25,\n                    fontWeight: FontWeight.w800),\n                  \n        ),\n\n\n        ),\n        backgroundColor: TColor.bg,\n        body: ListView.builder(\n          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),\n          itemCount: planArr.length,\n          itemBuilder: (context, index) {\n            var pObj = planArr[index] as Map? ?? {};\n            return PlanRow (\n              pObj: pObj,\n              onPressed: () {},\n            );\n          }\n        ),\n\n        \n    );\n    \n  }\n}\n\n"
+        }
+    ]
+}

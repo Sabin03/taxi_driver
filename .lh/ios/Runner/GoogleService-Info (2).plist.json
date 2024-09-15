@@ -1,0 +1,18 @@
+{
+    "sourceFile": "ios/Runner/GoogleService-Info (2).plist",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1720509489079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1720509489079,
+            "name": "Commit-0",
+            "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<dict>\n\t<key>API_KEY</key>\n\t<string>AIzaSyDLBlK8YqkKLxEHiysVsrZVk12JCXuLsuw</string>\n\t<key>GCM_SENDER_ID</key>\n\t<string>1098297880691</string>\n\t<key>PLIST_VERSION</key>\n\t<string>1</string>\n\t<key>BUNDLE_ID</key>\n\t<string>com.example.taxiDriver</string>\n\t<key>PROJECT_ID</key>\n\t<string>badaa-5295d</string>\n\t<key>STORAGE_BUCKET</key>\n\t<string>badaa-5295d.appspot.com</string>\n\t<key>IS_ADS_ENABLED</key>\n\t<false></false>\n\t<key>IS_ANALYTICS_ENABLED</key>\n\t<false></false>\n\t<key>IS_APPINVITE_ENABLED</key>\n\t<true></true>\n\t<key>IS_GCM_ENABLED</key>\n\t<true></true>\n\t<key>IS_SIGNIN_ENABLED</key>\n\t<true></true>\n\t<key>GOOGLE_APP_ID</key>\n\t<string>1:1098297880691:ios:b103045b1b24bed441fa06</string>\n</dict>\n</plist>"
+        }
+    ]
+}

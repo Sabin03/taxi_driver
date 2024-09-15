@@ -1,0 +1,13 @@
+{
+    "cmake.ignoreCMakeListsMissing": true,
+    "debug.javascript.autoAttachFilter": "always",
+    "debug.allowBreakpointsEverywhere": false,
+    "debug.javascript.breakOnConditionalError": false,
+    "pieces.cloudCapabilities": "Blended",
+    "pieces.telemetry": true,
+    "Codegeex.GenerationPreference": "automatic",
+    "Codegeex.CommitMessage.LanguagePreference": "English",
+    "Codegeex.Comment.LanguagePreference": "English",
+    "Codegeex.Chat.LanguagePreference": "English",
+    "CodeGPT.apiKey": "CodeGPT Plus Beta"
+}
