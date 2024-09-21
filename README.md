@@ -4,26 +4,26 @@ Welcome to the Complete Taxi App Development project! This repository provides a
 
 🌟 Key Highlights
 
-	•	Flutter: Build a mobile app that works seamlessly on both Android and iOS.
-	•	Angular Material: Develop the backend interface and manage server-side logic with a modern UI toolkit.
-	•	Node.js & Express.js: Implement scalable and efficient REST APIs to handle the backend of the Taxi App.
+	•Flutter: Build a mobile app that works seamlessly on both Android and iOS.
+	•Angular Material: Develop the backend interface and manage server-side logic with a modern UI toolkit.
+	•Node.js & Express.js: Implement scalable and efficient REST APIs to handle the backend of the Taxi App.
 
 📊 App Features
 
-	•	User Registration & Authentication: Secure user registration, login, and account management.
-	•	Real-time Location Tracking: Integrated maps for live location tracking and navigation.
-	•	Ride Booking & Management: A streamlined booking process for requesting and managing rides.
-	•	Payment Processing: Cash payment support for seamless in-app transactions.
-	•	Driver Matching & Ratings: Smart driver matching with user rating and feedback features.
-	•	Customer Support & Notifications: In-app notifications and customer support features to enhance user experience.
+	•User Registration & Authentication: Secure user registration, login, and account management.
+	•Real-time Location Tracking: Integrated maps for live location tracking and navigation.
+	•Ride Booking & Management: A streamlined booking process for requesting and managing rides.
+	•Payment Processing: Cash payment support for seamless in-app transactions.
+	•Driver Matching & Ratings: Smart driver matching with user rating and feedback features.
+	•Customer Support & Notifications: In-app notifications and customer support features to enhance user experience.
 
 🚀 How to Contribute
 
 We welcome contributions to this project! Whether you’re experienced in Flutter, Angular, or Node.js, or looking to learn, there are various ways you can get involved:
 
-	1.	Fork the Repository: Start by forking this repository to your GitHub account.
-	2.	Work on Features/Issues: Pick an open issue or suggest new features for the app.
-	3.	Submit a Pull Request: Once your changes are ready, submit a pull request for review.
+	1.Fork the Repository: Start by forking this repository to your GitHub account.
+	2.Work on Features/Issues: Pick an open issue or suggest new features for the app.
+	3.Submit a Pull Request: Once your changes are ready, submit a pull request for review.
 
 Your contributions will help improve the project and make it better for everyone!
 
