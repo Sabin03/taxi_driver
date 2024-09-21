@@ -41,9 +41,9 @@ Check out the demo video of the app in action:
 ## 📷 Screenshots
 
 <p align="center">
-  <img src="https://github.com/Sabin03/taxi_driver/raw/main/assets/Screenshots/IMG_6941.png" alt="Screenshot 1" width="300"/>
-  <img src="https://github.com/Sabin03/taxi_driver/raw/main/assets/Screenshots/IMG_6942.png" alt="Screenshot 2" width="300"/>
-  <img src="https://github.com/Sabin03/taxi_driver/raw/main/assets/Screenshots/IMG_6943.png" alt="Screenshot 3" width="300"/>
+  <img src="https://github.com/Sabin03/taxi_driver/raw/main/assets/Screenshots/IMG_6941.png" alt="Screenshot" width="300"/>
+  <img src="https://github.com/Sabin03/taxi_driver/raw/main/assets/Screenshots/IMG_6942.png" alt="Screenshot" width="300"/>
+  <img src="https://github.com/Sabin03/taxi_driver/raw/main/assets/Screenshots/IMG_6943.png" alt="Screenshot" width="300"/>
 </p>
 
 <p align="center">
