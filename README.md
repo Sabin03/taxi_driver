@@ -28,3 +28,6 @@ We’re looking for developers to collaborate on this exciting project! Whether 
 🙌 Join the Discussion:
 
 Feel free to reach out if you have any questions or ideas to improve the app. We welcome all contributions and would love to collaborate with talented developers!
+
+Demo Video 
+Watch the video : https://youtu.be/LkzQVjdqOOE?si=8ZLfUWYiugpM398F
