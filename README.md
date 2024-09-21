@@ -41,6 +41,6 @@ Check out the demo video of the app in action:
 
 Here are some screenshots of the app:
 
-![Screenshot 1](https://github.com/user-attachments/assets/screenshotse8664ce8-11cd-4a63-9d47-29326ee47b20)
+![Screenshot 1](https://github.com/user-attachments/assets/e8664ce8-11cd-4a63-9d47-29326ee47b20)
 ![Screenshot 2](https://github.com/user-attachments/assets/6b82bbe0-b7da-4c15-865e-ccc0bf4ef376)
 ![Screenshot 3](https://github.com/user-attachments/assets/e1ef2b13-ed39-47a1-8165-53accca8ded5)
