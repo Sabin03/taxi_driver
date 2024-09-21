@@ -35,29 +35,32 @@ Watch the video : https://youtu.be/LkzQVjdqOOE?si=8ZLfUWYiugpM398F
 Screenshots 
 App Screenshot : 
 
-![IMG_6963](https://github.com/user-attachments/assets/234013de-f730-4b33-989a-b97e53b8b6ff)
-![IMG_6962](https://github.com/user-attachments/assets/a3cdb83e-0513-4188-bd6d-cda7000f4668)
-![IMG_6961](https://github.com/user-attachments/assets/8a46ae93-ad28-459a-b189-abbd699f15f8)
-![IMG_6960](https://github.com/user-attachments/assets/87584f3b-a2dc-4ec5-ae34-59ede7652052)
-![IMG_6959](https://github.com/user-attachments/assets/17333bb3-7a3f-41c7-a57c-90072cc93991)
-![IMG_6958](https://github.com/user-attachments/assets/da67a04d-f025-42e5-b901-867f9cf47707)
-![IMG_6957](https://github.com/user-attachments/assets/3ecc8e04-cc08-450b-b7ba-2bf943c1b587)
-![IMG_6956](https://github.com/user-attachments/assets/9c20b31d-9900-4c80-a08f-8b38000552db)
-![IMG_6955](https://github.com/user-attachments/assets/91e4fdcb-e00b-4c79-9a5a-ec27fe6470e9)
-![IMG_6954](https://github.com/user-attachments/assets/5bf6a8a8-1ac9-480f-8677-d5026e0f4ea4)
-![IMG_6953](https://github.com/user-attachments/assets/773c3e00-d609-49be-9fd5-145a45d099eb)
-![IMG_6952](https://github.com/user-attachments/assets/875d71d6-41f0-4bde-818e-6bab1f54db4c)
-![IMG_6951](https://github.com/user-attachments/assets/d69543f7-a5d3-46bf-9960-782287e1aa2e)
-![IMG_6950](https://github.com/user-attachments/assets/be1adc5b-f2de-409d-808a-fb1fc9e5d2ca)
-![IMG_6949](https://github.com/user-attachments/assets/b0a4b047-7dc1-4d94-892d-a4f875f2faaa)
-![IMG_6948](https://github.com/user-attachments/assets/a0cf7f19-7a7b-4ce9-9416-80d6620af014)
-![IMG_6947](https://github.com/user-attachments/assets/43a37f96-7a03-48fc-83b6-4dae0536b178)
-![IMG_6946](https://github.com/user-attachments/assets/dc4bbacf-c082-467b-b7f9-ed56da6f31ec)
-![IMG_6945](https://github.com/user-attachments/assets/dbfd52ed-8c53-476d-aa17-1b8c811699bc)
-![IMG_6944](https://github.com/user-attachments/assets/442fbb3c-a057-43c3-b08e-69bbbc0e5d1f)
-![IMG_6943](https://github.com/user-attachments/assets/9a468a5d-d034-4b7d-a135-e3f214c61160)
-![IMG_6942](https://github.com/user-attachments/assets/2637f11d-41b3-4638-8a51-45d775dbad14)
-![IMG_6941](https://github.com/user-attachments/assets/97042605-d87a-4684-93c0-b74b53099001)
-![IMG_6940](https://github.com/user-attachments/assets/e633bddf-0905-4ac3-b288-b1ae5fd59c7f)
+![IMG_6941](https://github.com/user-attachments/assets/e8664ce8-11cd-4a63-9d47-29326ee47b20)
+![IMG_6942](https://github.com/user-attachments/assets/6b82bbe0-b7da-4c15-865e-ccc0bf4ef376)
+![IMG_6943](https://github.com/user-attachments/assets/e1ef2b13-ed39-47a1-8165-53accca8ded5)
+![IMG_6944](https://github.com/user-attachments/assets/c5207591-8284-4476-896e-cb5bc13c17cb)
+![IMG_6945](https://github.com/user-attachments/assets/55911e18-3d34-4c35-838c-8316b57af168)
+![IMG_6946](https://github.com/user-attachments/assets/c06d8da4-4fcc-4c1c-9436-a0efc5e65425)
+![IMG_6947](https://github.com/user-attachments/assets/a947c27a-bb3c-472c-8e3f-597887efdca7)
+![IMG_6948](https://github.com/user-attachments/assets/6e24cb5a-6ecd-44f4-a207-6228ab305860)
+![IMG_6949](https://github.com/user-attachments/assets/f8f6af9f-4ecf-4654-927e-2bfe7ac3c812)
+![IMG_6950](https://github.com/user-attachments/assets/f29c7ecd-7291-44e9-b291-6da524a29ab6)
+![IMG_6951](https://github.com/user-attachments/assets/e09a12d7-e90e-4718-bbf1-2b90903a2b25)
+![IMG_6952](https://github.com/user-attachments/assets/599d080b-151c-48d8-9aff-b19d6aaad5c7)
+![IMG_6953](https://github.com/user-attachments/assets/9763ee37-c260-4db6-9c4a-54534fb2040c)
+![IMG_6954](https://github.com/user-attachments/assets/66a4cfba-13b8-4617-95fb-d8244b8e7b5e)
+![IMG_6959](https://github.com/user-attachments/assets/246f1063-9816-448e-8488-5b56bfedfb80)
+![IMG_6960](https://github.com/user-attachments/assets/b1da3f94-0b01-43e7-b62b-e3fb2e226e1a)
+![IMG_6961](https://github.com/user-attachments/assets/02a1ef5d-3a7c-44b7-9465-8fc15904f1a9)
+![IMG_6962](https://github.com/user-attachments/assets/f2704265-cbd6-445c-be97-c743aa5c08ac)
+![IMG_6963](https://github.com/user-attachments/assets/b66599ac-f8ef-4d90-ac78-3e6106aafb08)
+
+
+
+
+
+
+
+
 
 
