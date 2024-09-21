@@ -40,6 +40,7 @@ Check out the demo video of the app in action:
 
 ## 📷 Screenshots
 ![IMG_6941](https://github.com/user-attachments/assets/b8e1f250-e4f1-4e87-b5c8-a952b5de3123)
+
 ![IMG_6942](https://github.com/user-attachments/assets/9ae9a8dc-a92c-4f9f-8f0b-d99acd79cb21)
 ![IMG_6943](https://github.com/user-attachments/assets/8c7b9f4e-b318-4e55-8dbf-afd4a5ba77f8)
 ![IMG_6944](https://github.com/user-attachments/assets/4bc323ee-b0bb-4064-af76-66d9c4d70632)
