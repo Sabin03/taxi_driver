@@ -37,17 +37,18 @@ Check out the demo video of the app in action:
 
 [![Watch the video](https://img.youtube.com/vi/LkzQVjdqOOE/maxresdefault.jpg)](https://www.youtube.com/watch?v=LkzQVjdqOOE)
 
+
 ## 📷 Screenshots
 
 Here are some screenshots of the app:
 
 <p align="center">
-  <img src="https://github.com/Sabin03/taxi_driver/raw/main/assets/Screenshots/screenshot1.png" alt="Screenshot 1" width="300"/>
-  <img src="https://github.com/Sabin03/taxi_driver/raw/main/assets/Screenshots/screenshot2.png" alt="Screenshot 2" width="300"/>
-  <img src="https://github.com/Sabin03/taxi_driver/raw/main/assets/Screenshots/screenshot3.png" alt="Screenshot 3" width="300"/>
+  <img src="https://github.com/Sabin03/taxi_driver/raw/main/assets/Screenshots/IMG_6941.png" alt="Screenshot 1" width="300"/>
+  <img src="https://github.com/Sabin03/taxi_driver/raw/main/assets/Screenshots/IMG_6942.png" alt="Screenshot 2" width="300"/>
+  <img src="https://github.com/Sabin03/taxi_driver/raw/main/assets/Screenshots/IMG_6943.png" alt="Screenshot 3" width="300"/>
 </p>
 
 <p align="center">
-  <img src="https://github.com/Sabin03/taxi_driver/raw/main/assets/Screenshots/screenshot4.png" alt="Screenshot 4" width="300"/>
-  <img src="https://github.com/Sabin03/taxi_driver/raw/main/assets/Screenshots/screenshot5.png" alt="Screenshot 5" width="300"/>
+  <img src="https://github.com/Sabin03/taxi_driver/raw/main/assets/Screenshots/IMG_6944.png" alt="Screenshot 4" width="300"/>
+  <img src="https://github.com/Sabin03/taxi_driver/raw/main/assets/Screenshots/IMG_6945.png" alt="Screenshot 5" width="300"/>
 </p>
